@@ -5,8 +5,8 @@ body {
 
 :root {
   /* fonts */
-  --font-crimson-text: "Crimson Text";
   --font-playfair-display: "Playfair Display";
+  --font-crimson-text: "Crimson Text";
   --font-inter: Inter;
 
   /* font sizes */
@@ -21,8 +21,8 @@ body {
   --color-black: #000;
 
   /* Paddings */
+  --padding-210xl: 229px;
   --padding-11xs: 2px;
-  --padding-81xl: 100px;
 
   /* Border radiuses */
   --br-xl: 20px;
