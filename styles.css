@@ -10,6 +10,7 @@ body {
     display: flex;
     font-family: 'Crimson Text', serif;
     height: 100vh; /* Full viewport height */
+    overflow-x: hidden;
 }
 
 header {
@@ -47,6 +48,7 @@ nav a {
     color: white;
     height: calc(100vh - 80px); /* Adjust based on header height */
     overflow-y: auto; /* Allows scrolling if content is too long */
+    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
 }
 
 .image-content {
@@ -56,6 +58,7 @@ nav a {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .image-content img {
@@ -81,6 +84,7 @@ nav a {
         width: 100%;
         height: auto; /* Height becomes automatic */
         padding: 1em;
+        clip-path: none; /* Reset the clip-path for mobile view */
     }
 }
 
