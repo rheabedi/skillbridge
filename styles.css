@@ -1,70 +1,106 @@
-body, html {
+/* Reset some default styles */
+body, h1, p {
     margin: 0;
     padding: 0;
+}
+
+/* Set some default font and box-sizing for all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #0044cc;
-    color: white;
+body {
+    line-height: 1.6;
+    color: #333;
 }
 
-#logo {
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-nav a {
+.header, .nav-links a {
     text-decoration: none;
     color: white;
 }
 
-.hero {
-    background: #cceeff; /* Add a gradient or image based on your screenshot */
-    text-align: center;
-    padding: 4rem 1rem;
+/* Styling for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #005a9c;
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #003366;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-#create-account {
-    background: #008800;
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    padding: 0 1rem;
+    text-decoration: none;
     color: white;
-    border: none;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    cursor: pointer;
+    font-size: 1rem;
 }
 
-/* Add responsive breakpoints */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+/* Hero section styling */
+.hero {
+    background-color: #b4dcff; /* Placeholder color, replace with background image */
+    padding: 2rem 5%;
+    text-align: center;
+}
 
-    h1 {
+.hero h1 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.tagline {
+    color: #003366;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Call to action button */
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #22a6b3;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3dc1d3;
+}
+
+/* Add responsiveness */
+@media only screen and (max-width: 600px) {
+    .hero h1 {
         font-size: 2rem;
     }
-}
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .hero button {
-        padding: .5rem 1rem;
+    .nav-links {
+        padding-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
     }
 }
