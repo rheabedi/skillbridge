@@ -1,57 +1,48 @@
-/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Crimson+Text&display=swap');
 
-/* Basic Reset */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: 'Crimson Text', serif;
 }
 
-/* Header Styles */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #1DA1F2; /* Blue color */
+    justify-content: flex-end;
+    padding: 1em;
+    background: #1DA1F2; /* Your blue color */
 }
 
-#logo {
-    width: 150px; /* You can adjust the size as needed */
+header img {
+    width: 150px; /* Adjust as needed */
 }
 
 nav a {
-    color: white;
     text-decoration: none;
+    color: white;
+    padding: 0 1em;
     font-family: 'Playfair Display', serif;
-    margin: 0 10px;
 }
 
-/* Description Section Styles */
-.description {
+#description {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 2em;
 }
 
 .text-content {
     width: 50%;
-    padding: 20px;
-    background-color: #1DA1F2; /* Blue color */
-    color: white;
-    font-family: 'Playfair Display', serif;
+    color: #1DA1F2; /* Your blue color */
 }
 
 .image-content {
     width: 50%;
-    padding: 20px;
-    background-color: #D9FFDD; /* Green color */
-    text-align: center; /* Centers the image */
+    background: #D9FFDD; /* Your green color */
+    text-align: center; /* Center the image */
 }
 
 .image-content img {
@@ -59,14 +50,16 @@ nav a {
     height: auto;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .description {
+    header, #description {
         flex-direction: column;
+        text-align: center;
     }
+
     .text-content, .image-content {
         width: 100%;
     }
 }
 
-/* Additional responsive styles can be added as needed */
+/* Add further responsive adjustments as needed */
+
