@@ -7,14 +7,18 @@
 }
 
 body {
+    display: flex;
     font-family: 'Crimson Text', serif;
+    height: 100vh; /* Full viewport height */
 }
 
 header {
-    display: flex;
-    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
     padding: 1em;
     background: #1DA1F2; /* Your blue color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 header img {
@@ -29,37 +33,55 @@ nav a {
 }
 
 #description {
+    width: 100%;
     display: flex;
+    align-items: center; /* Align vertically */
     justify-content: space-between;
-    padding: 2em;
+    padding-top: 80px; /* Adjust based on header height */
 }
 
 .text-content {
     width: 50%;
-    color: #1DA1F2; /* Your blue color */
+    padding: 2em;
+    background: #1DA1F2; /* Your blue color */
+    color: white;
+    height: calc(100vh - 80px); /* Adjust based on header height */
+    overflow-y: auto; /* Allows scrolling if content is too long */
 }
 
 .image-content {
     width: 50%;
     background: #D9FFDD; /* Your green color */
-    text-align: center; /* Center the image */
+    height: calc(100vh - 80px); /* Full height minus header */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
 }
 
 .image-content img {
     max-width: 100%;
+    max-height: 100%;
     height: auto;
 }
 
 @media (max-width: 768px) {
-    header, #description {
+    body {
         flex-direction: column;
-        text-align: center;
+    }
+
+    header {
+        position: relative; /* Header flows with the document */
+    }
+
+    #description {
+        flex-direction: column;
     }
 
     .text-content, .image-content {
         width: 100%;
+        height: auto; /* Height becomes automatic */
+        padding: 1em;
     }
 }
 
 /* Add further responsive adjustments as needed */
-
