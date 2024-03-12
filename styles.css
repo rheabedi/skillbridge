@@ -1,13 +1,70 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    padding: 1rem;
+    background-color: #0044cc;
+    color: white;
+}
+
+#logo {
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background: #cceeff; /* Add a gradient or image based on your screenshot */
+    text-align: center;
+    padding: 4rem 1rem;
 }
 
 h1 {
-    color: #333;
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+#create-account {
+    background: #008800;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* Add responsive breakpoints */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero button {
+        padding: .5rem 1rem;
+    }
 }
