@@ -1,106 +1,72 @@
-/* Reset some default styles */
-body, h1, p {
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Crimson+Text&display=swap');
+
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-}
-
-/* Set some default font and box-sizing for all elements */
-*, *:before, *:after {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Crimson Text', serif;
 }
 
-.header, .nav-links a {
-    text-decoration: none;
-    color: white;
-}
-
-/* Styling for the navigation bar */
-.navbar {
+/* Header Styles */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
-    background-color: #005a9c;
+    padding: 20px;
+    background-color: #1DA1F2; /* Blue color */
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+#logo {
+    width: 150px; /* You can adjust the size as needed */
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links a {
-    padding: 0 1rem;
-    text-decoration: none;
+nav a {
     color: white;
-    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    margin: 0 10px;
 }
 
-/* Hero section styling */
-.hero {
-    background-color: #b4dcff; /* Placeholder color, replace with background image */
-    padding: 2rem 5%;
-    text-align: center;
+/* Description Section Styles */
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero h1 {
-    color: #003366;
-    margin-bottom: 1rem;
-    font-size: 3rem;
+.text-content {
+    width: 50%;
+    padding: 20px;
+    background-color: #1DA1F2; /* Blue color */
+    color: white;
+    font-family: 'Playfair Display', serif;
 }
 
-.tagline {
-    color: #003366;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+.image-content {
+    width: 50%;
+    padding: 20px;
+    background-color: #D9FFDD; /* Green color */
+    text-align: center; /* Centers the image */
 }
 
-/* Call to action button */
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #22a6b3;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 2rem;
-    transition: background-color 0.3s ease;
+.image-content img {
+    max-width: 100%;
+    height: auto;
 }
 
-.cta-button:hover {
-    background-color: #3dc1d3;
-}
-
-/* Add responsiveness */
-@media only screen and (max-width: 600px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .navbar {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .description {
         flex-direction: column;
-        align-items: flex-start;
     }
-
-    .nav-links {
-        padding-top: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links a {
-        padding: 0.5rem 0;
+    .text-content, .image-content {
+        width: 100%;
     }
 }
+
+/* Additional responsive styles can be added as needed */
