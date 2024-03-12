@@ -1,91 +1,90 @@
+/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Crimson+Text&display=swap');
 
+/* Basic Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
     font-family: 'Crimson Text', serif;
-    height: 100vh; /* Full viewport height */
-    overflow-x: hidden;
 }
 
+/* Header Styles */
 header {
-    position: fixed;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1DA1F2; /* Blue color */
+    justify-content: flex-end;
     padding: 1em;
     background: #1DA1F2; /* Your blue color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
 }
 
+#logo {
+    width: 150px; /* You can adjust the size as needed */
 header img {
     width: 150px; /* Adjust as needed */
 }
 
 nav a {
+    color: white;
     text-decoration: none;
     color: white;
     padding: 0 1em;
     font-family: 'Playfair Display', serif;
+    margin: 0 10px;
 }
 
+/* Description Section Styles */
+.description {
 #description {
-    width: 100%;
     display: flex;
-    align-items: center; /* Align vertically */
     justify-content: space-between;
-    padding-top: 80px; /* Adjust based on header height */
+    align-items: center;
+    padding: 2em;
 }
 
 .text-content {
     width: 50%;
-    padding: 2em;
-    background: #1DA1F2; /* Your blue color */
+    padding: 20px;
+    background-color: #1DA1F2; /* Blue color */
     color: white;
-    height: calc(100vh - 80px); /* Adjust based on header height */
-    overflow-y: auto; /* Allows scrolling if content is too long */
-    clip-path: polygon(0 0, 100% 0%, 60% 100%, 0% 100%);
+    font-family: 'Playfair Display', serif;
+    color: #1DA1F2; /* Your blue color */
 }
 
 .image-content {
     width: 50%;
+    padding: 20px;
+    background-color: #D9FFDD; /* Green color */
+    text-align: center; /* Centers the image */
     background: #D9FFDD; /* Your green color */
-    height: calc(100vh - 80px); /* Full height minus header */
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+    text-align: center; /* Center the image */
 }
 
 .image-content img {
     max-width: 100%;
-    max-height: 100%;
     height: auto;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    body {
+    .description {
+    header, #description {
         flex-direction: column;
-    }
-
-    header {
-        position: relative; /* Header flows with the document */
-    }
-
-    #description {
-        flex-direction: column;
+        text-align: center;
     }
 
     .text-content, .image-content {
         width: 100%;
-        height: auto; /* Height becomes automatic */
-        padding: 1em;
-        clip-path: none; /* Reset the clip-path for mobile view */
     }
 }
 
+/* Additional responsive styles can be added as needed */
 /* Add further responsive adjustments as needed */
+
