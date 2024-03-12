@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-crimson-text: "Crimson Text";
+  --font-playfair-display: "Playfair Display";
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-6xl: 25px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-cornflowerblue: #1da1f2;
+  --color-white: #fff;
+  --color-darkseagreen: rgba(170, 187, 136, 0.76);
+  --color-black: #000;
+
+  /* Paddings */
+  --padding-11xs: 2px;
+  --padding-81xl: 100px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+}
