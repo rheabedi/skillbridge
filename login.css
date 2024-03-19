@@ -9,6 +9,7 @@
 .about-us3 {
   position: relative;
   font-weight: 500;
+  cursor: pointer;
 }
 .frame24 {
   position: absolute;
