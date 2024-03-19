@@ -121,34 +121,25 @@
   overflow: hidden;
 }
 .app-store-2,
-.play-1 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
+.play-1-icon {
   width: 296px;
   position: relative;
   height: 80px;
-  background-image: url(./public/app-store-2@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.play-1 {
-  background-image: url(./public/play-1@3x.png);
+  object-fit: cover;
+  cursor: pointer;
 }
 .download-buttons {
   position: absolute;
   top: 831px;
   left: 32px;
   width: 658px;
-  height: 147px;
+  height: 93px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-xs) 9px var(--padding-xs) var(--padding-4xl);
+  padding: 0 9px 12px var(--padding-4xl);
   box-sizing: border-box;
   gap: 34px;
 }
@@ -261,28 +252,19 @@
 }
 .start-bridging-now {
   position: absolute;
-  top: 276px;
-  left: 173px;
+  top: 279px;
+  left: 130px;
   display: inline-block;
   width: 1150px;
   height: 362px;
 }
 .app-store-1,
-.play-2 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
+.play-2-icon {
   width: 359px;
   position: relative;
   height: 97px;
-  background-image: url(./public/app-store-1@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.play-2 {
-  background-image: url(./public/play-2@3x.png);
+  object-fit: cover;
+  cursor: pointer;
 }
 .app-store-1-parent,
 .frame-item {
@@ -290,8 +272,8 @@
   overflow: hidden;
 }
 .app-store-1-parent {
-  top: 424px;
-  left: 349px;
+  top: 418px;
+  left: 297px;
   width: 993px;
   height: 243px;
   display: flex;
@@ -315,8 +297,8 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 928px;
-  left: -42px;
+  top: 904px;
+  left: -44px;
   font-size: var(--button-heading-size);
   font-weight: 700;
   font-family: var(--font-inria-serif);
@@ -327,7 +309,7 @@
   height: 65px;
 }
 .skillbridge {
-  top: 848px;
+  top: 817px;
   left: 26px;
   font-size: var(--font-size-29xl);
   letter-spacing: -0.01em;
