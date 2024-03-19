@@ -71,9 +71,19 @@
           </b>
         </div>
         <div class="download-buttons">
-          <img class="app-store-2" alt="" src="./public/app-store-2@2x.png" />
+          <img
+            class="app-store-2"
+            alt=""
+            src="./public/app-store-2@2x.png"
+            id="appStore2"
+          />
 
-          <img class="play-1-icon" alt="" src="./public/play-1@2x.png" />
+          <img
+            class="play-1-icon"
+            alt=""
+            src="./public/play-1@2x.png"
+            id="play1Image"
+          />
         </div>
         <div class="frame6">
           <div class="frame7">
@@ -100,9 +110,19 @@
         <div class="start-bridging-now-parent">
           <b class="start-bridging-now">Start Bridging Now!</b>
           <div class="app-store-1-parent">
-            <img class="app-store-1" alt="" src="./public/app-store-1@2x.png" />
+            <img
+              class="app-store-1"
+              alt=""
+              src="./public/app-store-1@2x.png"
+              id="appStore1"
+            />
 
-            <img class="play-2-icon" alt="" src="./public/play-2@2x.png" />
+            <img
+              class="play-2-icon"
+              alt=""
+              src="./public/play-2@2x.png"
+              id="play2Image"
+            />
           </div>
           <div class="frame-item"></div>
           <button class="privacy-policy">
@@ -162,6 +182,20 @@
     </div>
 
     <script>
+      var appStore2 = document.getElementById("appStore2");
+      if (appStore2) {
+        appStore2.addEventListener("click", function () {
+          window.open("https://www.apple.com/app-store/");
+        });
+      }
+      
+      var play1Image = document.getElementById("play1Image");
+      if (play1Image) {
+        play1Image.addEventListener("click", function () {
+          window.open("https://play.google.com/store/games?hl=en_US&gl=US");
+        });
+      }
+      
       var aboutUsText = document.getElementById("aboutUsText");
       if (aboutUsText) {
         aboutUsText.addEventListener("click", function (e) {
@@ -173,6 +207,20 @@
       if (loginText) {
         loginText.addEventListener("click", function (e) {
           window.location.href = "./login.html";
+        });
+      }
+      
+      var appStore1 = document.getElementById("appStore1");
+      if (appStore1) {
+        appStore1.addEventListener("click", function () {
+          window.open("https://www.apple.com/app-store/");
+        });
+      }
+      
+      var play2Image = document.getElementById("play2Image");
+      if (play2Image) {
+        play2Image.addEventListener("click", function () {
+          window.open("https://play.google.com/store/games?hl=en_US&gl=US");
         });
       }
       </script>
