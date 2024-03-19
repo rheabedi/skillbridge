@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./about-us-page.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair Display:ital,wght@0,500;0,600;0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
     />
     <link
       rel="stylesheet"
@@ -39,6 +39,7 @@
                 <p class="connect-and-grow">Connect and Grow</p>
               </div>
               <div class="heading-and-subheading-child"></div>
+              <div class="heading-and-subheading-item"></div>
             </div>
           </div>
           <div class="aboutus">
@@ -78,7 +79,7 @@
                     <span class="span"> </span>
                   </p>
                 </div>
-                <div class="heading-and-subheading-item"></div>
+                <div class="heading-and-subheading-inner"></div>
               </div>
             </div>
           </div>
@@ -295,7 +296,11 @@
                   <div class="heading-and-subheading3">
                     <div class="heading6">Our Contact Details</div>
                   </div>
-                  <div class="supporting-text5">Let’s connect.</div>
+                  <div class="supporting-text5">
+                    <p class="lets-connect">Let’s connect</p>
+                    <p class="blank-line1">&nbsp;</p>
+                    <p class="blank-line2">&nbsp;</p>
+                  </div>
                 </div>
                 <div class="content8">
                   <div class="contact-text4">
@@ -328,10 +333,22 @@
                   </div>
                 </div>
               </div>
+              <div class="supporting-text-wrapper" id="frameContainer">
+                <div class="supporting-text10">SkillBridge</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./landing-page.html";
+        });
+      }
+      </script>
   </body>
 </html>
