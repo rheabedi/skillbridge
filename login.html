@@ -32,7 +32,7 @@
       <img class="login-child" alt="" src="./public/rectangle-1@2x.png" />
 
       <div class="frame24">
-        <div class="about-us3">About us</div>
+        <div class="about-us3" id="aboutUsText">About us</div>
       </div>
       <div class="component-2">
         <div class="login2">Login</div>
@@ -98,6 +98,13 @@
     </div>
 
     <script>
+      var aboutUsText = document.getElementById("aboutUsText");
+      if (aboutUsText) {
+        aboutUsText.addEventListener("click", function (e) {
+          window.location.href = "./about-us-page.html";
+        });
+      }
+      
       var iMG40582Image = document.getElementById("iMG40582Image");
       if (iMG40582Image) {
         iMG40582Image.addEventListener("click", function (e) {
